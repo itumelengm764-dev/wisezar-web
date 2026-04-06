@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f6fa;
+}
+
+.container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-top: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* HERO CARD */
+.highlight {
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  color: white;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 10px;
+}
+
+.grid .card {
+  flex: 1;
+  text-align: center;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* TRANSACTIONS */
+.txn {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.txn p {
+  margin: 0;
+  color: #777;
+}
+
+/* LOGOUT */
+.logout {
+  background: #e53935;
+}
+
+.auth-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 20px;
+
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: white;
+
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  z-index: 10;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.splash {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: white;
+}
+
+.splash img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.dashboard {
+  padding: 20px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.dashboard-header h2 {
+  margin: 0;
+}
+
+.dashboard-header p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* 💰 BALANCE */
+.balance-card {
+  background: linear-gradient(135deg, #2e7d32, #00c853);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.balance-card h1 {
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+/* 📊 STATS */
+.stats {
+  display: flex;
+  gap: 10px;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* ⚡ ACTIONS */
+.actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* 🚪 LOGOUT */
+.logout {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #e53935;
+  color: white;
+}
+
+.transactions {
+  margin-top: 20px;
+}
+
+.txn {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 8px;
+
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.txn p {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
