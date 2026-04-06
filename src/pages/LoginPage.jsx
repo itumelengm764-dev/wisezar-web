@@ -22,19 +22,23 @@ export default function LoginPage() {
 
   return (
     <div className="auth-container">
+
       <div className="auth-card">
 
         {/* LOGO */}
-        <img src={logo} className="auth-logo" />
+        <img src={logo} alt="logo" className="auth-logo" />
 
-        <h2>Welcome Back</h2>
+        {/* TITLE */}
+        <h2>Welcome Back 👋</h2>
+        <p className="auth-subtitle">Login to continue</p>
 
         {/* FORM */}
         <form onSubmit={handleLogin}>
+
           <input
             className="auth-input"
             type="email"
-            placeholder="Email"
+            placeholder="Email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -50,6 +54,7 @@ export default function LoginPage() {
           <button className="auth-button">
             Login
           </button>
+
         </form>
 
         {/* LINK */}
@@ -58,10 +63,11 @@ export default function LoginPage() {
         </p>
 
         <Link to="/register" className="auth-link-btn">
-          Sign up
+          Create account
         </Link>
 
       </div>
+
     </div>
   );
 }

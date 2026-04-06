@@ -1,20 +1,27 @@
+/* 🌍 BASE */
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: #f5f6fa;
+  background: #f5f7fa;
 }
 
+/* 📦 CONTAINER */
 .container {
   padding: 20px;
   max-width: 500px;
   margin: auto;
 }
 
-h1 {
-  margin-bottom: 20px;
+/* 🔤 TEXT */
+h1, h2, h3 {
+  margin: 0;
 }
 
-/* CARDS */
+p {
+  margin: 0;
+}
+
+/* 🧾 CARD */
 .card {
   background: white;
   padding: 16px;
@@ -23,13 +30,13 @@ h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* HERO CARD */
+/* 💚 HERO CARD */
 .highlight {
   background: linear-gradient(135deg, #00c853, #64dd17);
   color: white;
 }
 
-/* GRID */
+/* 📊 GRID */
 .grid {
   display: flex;
   gap: 10px;
@@ -40,7 +47,7 @@ h1 {
   text-align: center;
 }
 
-/* BUTTONS */
+/* 🔘 BUTTONS */
 button {
   width: 100%;
   padding: 12px;
@@ -57,27 +64,22 @@ button:hover {
   opacity: 0.9;
 }
 
-/* TRANSACTIONS */
+/* 🔴 LOGOUT BUTTON */
+.logout {
+  background: #e53935;
+}
+
+/* 🧾 TRANSACTIONS */
 .txn {
   border-top: 1px solid #eee;
   padding: 10px 0;
 }
 
 .txn p {
-  margin: 0;
   color: #777;
 }
 
-/* LOGOUT */
-.logout {
-  background: #e53935;
-}
-
-.auth-logo {
-  width: 100px;
-  margin-bottom: 15px;
-}
-
+/* 🔝 HEADER */
 .header {
   position: sticky;
   top: 0;
@@ -110,10 +112,10 @@ button:hover {
 }
 
 .header h2 {
-  margin: 0;
   font-size: 18px;
 }
 
+/* 🚀 SPLASH */
 .splash {
   height: 100vh;
   display: flex;
@@ -130,17 +132,14 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* 📱 DASHBOARD */
 .dashboard {
   padding: 20px;
-  background: #f4f6f8;
+  background: #f5f7fa;
   min-height: 100vh;
 }
 
 /* HEADER */
-.dashboard-header h2 {
-  margin: 0;
-}
-
 .dashboard-header p {
   color: #777;
   margin-bottom: 20px;
@@ -148,13 +147,13 @@ button:hover {
 
 /* 💰 BALANCE */
 .balance-card {
-  background: linear-gradient(135deg, #2e7d32, #00c853);
+  background: linear-gradient(135deg, #00c853, #00e676);
   color: white;
   padding: 25px;
   border-radius: 20px;
   margin-bottom: 20px;
 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .balance-card h1 {
@@ -166,6 +165,7 @@ button:hover {
 .stats {
   display: flex;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .stat-card {
@@ -180,52 +180,123 @@ button:hover {
 
 /* ⚡ ACTIONS */
 .actions {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .actions button {
-  padding: 14px;
-  border: none;
-  border-radius: 12px;
   background: white;
+  color: #111;
   font-weight: bold;
-  cursor: pointer;
 
   box-shadow: 0 5px 10px rgba(0,0,0,0.05);
 }
 
-/* 🚪 LOGOUT */
-.logout {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  border: none;
-  background: #e53935;
-  color: white;
-}
-
+/* 🧾 TRANSACTIONS CARD */
 .transactions {
-  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
 }
 
 .txn {
-  background: white;
-  padding: 12px;
-  border-radius: 10px;
-  margin-top: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
 
-  display: flex;
-  justify-content: space-between;
+.txn:last-child {
+  border-bottom: none;
+}
 
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+.txn strong {
+  font-size: 16px;
 }
 
 .txn p {
-  margin: 0;
-  color: #777;
   font-size: 12px;
+}
+
+/* 🔐 AUTH PAGE */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.auth-logo {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.auth-card h2 {
+  margin-bottom: 5px;
+}
+
+.auth-subtitle {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.auth-input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-size: 14px;
+}
+
+/* BUTTON */
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* LINKS */
+.auth-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.auth-link-btn {
+  display: inline-block;
+  margin-top: 5px;
+
+  color: #1976d2;
+  font-weight: bold;
+  text-decoration: none;
 }
